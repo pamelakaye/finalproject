@@ -1,0 +1,153 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Simone's Cake and Beyond</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#loginModal {
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				padding: 20px;
+				background: #000000;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+				z-index: 1000;
+				width: 700px; 
+        		max-height: 700px;
+        		
+			}
+	
+			#loginModal input {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+			@media (max-width: 768px) {
+        #loginModal {
+            width: 90%;
+        }
+    }
+		</style>
+
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Services</a>
+								<ul>
+									<li><a href="Mains.html">Mains</a></li>
+									<li><a href="PastaNoodles.html">Pasta / Noodles</a></li>
+									<li><a href="pizza.html">Pizza</a></li>
+									</li>
+								</ul>
+							</li>
+							<li><a href="elements.html">Gallery</a></li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Pizza</h2>
+						</header>
+
+						<!-- Image -->
+							<section>
+								
+								
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<h4>Margherita&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+										₱330.00</h4>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/margherita.jpg" alt="" /></span></div>
+										<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overload<br>
+                                            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₱320.00</h4>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/Overload.jpg" alt="" /></span></div>
+
+										<h4>Vegetarian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+									    ₱315.00</h4>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/vegetarian.jpg" alt="" /></span></div>
+
+										<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pepperoni<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₱365.00</h4>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pepperoni.jpg" alt="" /></span></div>
+
+										<h4>All Meat<br>
+                                            ₱350.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+										 </h4>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/all meat.jpg" alt="" /></span></div>
+
+										<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hawaian <br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₱185.00
+										</h4>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/hawaian.jpg" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+
+					</div>
+				</div>
+
+		</div>
+
+		<div id="loginModal">
+			<h2>Login Now!</h2>
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required>
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<br>
+				<input type="submit" value="Login" class="button primary">
+				<a href="index.html">Back</a>
+			</form>
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				
+				var modal = document.getElementById("loginModal");
+
+				var signUpButton = document.querySelector(".button.primary");
+
+				signUpButton.addEventListener("click", function () {
+					modal.style.display = "block";
+				});
+
+				window.addEventListener("click", function (event) {
+					if (event.target === modal) {
+						modal.style.display = "none";
+					}
+				});
+			});
+		</script>	
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
